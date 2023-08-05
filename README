@@ -7,14 +7,14 @@ Them create another trigger to call the first one everytime an insertion on the 
 
 Using the PostgreSQL `LISTEN` function in the psql terminal we can get an output like this: 
 
-![](screens/psql.png)
+![](https://github.com/nowayhecodes/postgres-datastream-sample/blob/main/screens/psql.png "psql screenshot")
 
 Then running the `listen.py` file: 
 
-![](screens/terminal.png)
+![](https://github.com/nowayhecodes/postgres-datastream-sample/blob/main/screens/terminal.png "terminal screenshot")
 
 And then, running the `main.py` file (which is a flask app) in another terminal, then calling `http://127.0.0.1/message/1` on Postman: 
 
-![](screens/postman.png)
+![](https://github.com/nowayhecodes/postgres-datastream-sample/blob/main/screens/postman.png "postman screenshot")
 
 This way we can do SSE to our frontends, or other integrations with message queues and stuff. 
